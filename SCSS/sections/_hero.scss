@@ -6,7 +6,7 @@ body{
     background-color: $gray-100 !important;
 }
 .hero-index{
-    margin-top: 5%;
+    // margin-top: 5%;
     .commingProjects{
         button:hover{
             background-color: $green !important;
@@ -167,7 +167,12 @@ body{
     }
 }
 .service-hero{
-
+    
+}
+.whatsnew-hero{
+.wats-new{
+  display: inline-flex;
+}
 }
 
 // common sections
@@ -205,9 +210,11 @@ body{
 }
  .price {
      font-weight: bolder;
-     font-size: 0.8em;
+     font-size: 1em;
      font-family: cursive;
-     color: $blue !important;
+     color: $white !important;
+     text-align: center !important;
+     padding: 0.6em;
 
 
 
@@ -313,6 +320,14 @@ body{
 
 @media (max-width : $mobile) {
     // respomsive of the about page
+    .carousel-item {
+            .w-100 {
+                height: 75vh !important;
+               
+               margin-right: 0;
+               
+            }
+        }
     .hero-about {
             margin-top: 30%;
            // margin-left: 15%;
@@ -373,7 +388,7 @@ body{
 .service-hero {
     .carousel-item{
        .w-100{
-        height:100vh!important;
+        // height:100vh!important;
        
 
        }
@@ -385,7 +400,17 @@ body{
 
 
 }
-         
+.whatsnew-hero{
+.col-12 {
+        flex: 0 0 auto;
+        width: auto !important;
+    }
+
+    .wats-new {
+        display: block;
+    }
+}
+        
 
 }
 @media (max-width:$laptop) and (min-width : $mobile) {
